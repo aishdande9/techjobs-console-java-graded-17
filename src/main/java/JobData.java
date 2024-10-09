@@ -93,7 +93,6 @@ public class JobData {
         ArrayList<HashMap<String,String>> distinct = new ArrayList<>();
         for (HashMap<String, String> row : allJobs) {
             for (Map.Entry<String, String> stringEntry : row.entrySet()) {
-                //System.out.println(stringEntry.getKey()+"--->"+stringEntry.getValue());
                if(stringEntry.getValue().toLowerCase().contains(value.toLowerCase())){
                 if(!distinct.contains(row)){
                       distinct.add(row);
